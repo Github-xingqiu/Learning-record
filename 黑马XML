@@ -1,0 +1,96 @@
+
+黑马XML
+https://www.bilibili.com/video/BV1Na4y1J75w
+
+数据传输
+配置文件
+储存数据
+
+规范数据格式
+
+XML：可扩展性标记语言
+被发明的目的是传输和储存数据，而不是展示数据
+
+Html：展示数据
+（官方标签）
+Xml的标签必须自定义、有含义
+W3C推举的数据传输格式
+
+必须有根节点
+
+Html	&xml
+1.	标签（官方；只能）
+2.	语法（不严格； 极其严格（标签必须成对））
+3.	展示数据； 传输数据
+
+语法：
+1.	Xml必须有根节点
+2.	头声明<?xml version=”1.0” encoding=”utf-8” ?>（可选）(推荐：编码解析方式)
+3.	大小写敏感
+4.	标签不可以交叉
+5.	注释：<!--  -->
+6.	显示<>，特殊字符使用实体转义	&lt；<	
+ 
+
+
+属性：
+
+
+
+C:\Program Files (x86)\DTLSoft\DriveTheLife\DTLPlugs
+C:\Program Files (x86)\Wifisrv\DTLPlugs
+
+C:\Users\Administrator\AppData\Roaming
+ 
+
+东方资讯：
+https://mini.eastday.com/nsa/n210226125654631.html?qid=04188
+
+
+
+属性：标签的说明
+一个标签可以有多个属性，属性的值必须用引号
+命名规则：数字字母下划线，数字不能开头
+
+Xml可以自定义标签，所以属性是鸡肋
+
+解析xml代码时，属性会带来额外的代价
+
+标签对可重复出现
+
+ 
+不解析，直接原样显示
+特殊字符较多时使用CDATA；较少时使用实体
+
+PHP5版本后 simpleXML类库
+
+XML解析原理
+
+DOM树
+
+PHP：
+1.	读取xml到内存
+2.	形成DOM树
+3.	由DOM树返回对象
+
+遍历：for（）
+
+写：
+1.	读
+2.	
+
+
+案列：查询城市天气
+
+脚本做个东西出来跟屎一样简单（html、xml、php）
+
+
+
+Xpath语言
+是一门专门用来查找xml数据内容的语言（规则）
+
+
+
+
+
+
