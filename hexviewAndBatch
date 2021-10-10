@@ -1,0 +1,31 @@
+rem /CR Cut out data ranges from the loaded file
+rem 	从加载的文件中切出数据范围
+rem /AF Specifies the fill character for /AL, /AD and /FA as hexadecimal value
+rem		将/ AL，/ AD和/ FA的填充字符指定为十六进制值
+rem /FR Fill regions
+rem		填充区域
+rem /FP Fill pattern in hex. Used by the /FR parameter
+rem  	以十六进制填充图案。 由/ FR参数使用
+rem /MO Merges the file(s) from the filelist into the memory in Opaque mode (existing data will be overwritten). The optional offset may be added to all addresses of the file that is merged. File names can have wildcards such as ? or *.
+rem		以不透明模式将文件列表中的文件合并到内存中（现有数据将被覆盖）。 可选的偏移量可以添加到合并文件的所有地址。 文件名可以带有通配符，例如？ 要么 *。
+rem /XN Exports data into the binary file format
+rem		将数据导出为二进制文件格式
+rem /AR Load a limited range of data. The ‘range’ is an address range, that can be specified in two ways: either with start address and length, separated by a comma, or with start address and end address, separated by a minus-sign.
+rem		加载有限范围的数据。 “范围”是一个地址范围，可以用两种方式指定：以逗号分隔的起始地址和长度，或以减号分隔的起始地址和结束地址。
+rem /FA Create a single region file (fill all)
+rem 	创建一个区域文件（全部填写）
+rem /XI Exports in Intel-HEX format
+rem 	以Intel-HEX格式导出
+rem /CS9 This option specifies the checksum calculation method. If the optional location parameter is added, the checksum value is written into this file. The result can also be placed into the loaded application data using the @ operator. Note: ‘location’ is a pre-requisit in most cases. If /CSR is used instead of /CS, the generated checksum will be inverted (low byte first).
+rem 	Create CRC file
+rem /AD Align data. Xx is specified in standard-C notation, e.g. 0xFF, whereas yy are only hexdigits. Format is distinguished by the separator ‘: or ‘=’.
+rem		对齐数据。 Xx以标准C表示法指定，例如 0xFF，而yy仅为十六进制数字。 格式由分隔符“：”或“ =”来区分。
+rem /AL Align length.
+rem		对齐长度。
+rem -o Specifies the output filename. The filename must follow directly the –o option separated with a blank character.
+rem /s Run HexView in silent mode.
+
+note：换行、空格，会导致莫名其妙的错误
+/IA 可以直接将数据写入
+
+echo 似乎也可以直接写入.bin文件
